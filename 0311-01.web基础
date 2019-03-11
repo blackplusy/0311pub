@@ -147,7 +147,11 @@ d.抓包
 			web服务器版本
 		5>响应体
 
+bpu http://www.xycentre.com/shop   设置断点
+bpu                                取消断点
 
+bpu http://www.xycentre.com/shop/user.php
+bpu
 
 
 
