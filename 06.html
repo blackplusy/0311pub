@@ -14,34 +14,42 @@
 		justify(两端对齐)
 	table中使用align="center"让表格居中
 	tr中使用align="center" 让表格中内容居中对齐 -->
+<!-- 	align控制左右对齐
+	    valign控制上下对齐 
+		单元格内可以独立设置
+	-->
+<!-- 	合并单元格
+	colspan      合并列 后面的值就是几个单元格
+	rowspan      合并行 后面的值就是几个单元格 -->
 	<table border="1px" width="600px" height="400px" align="center" bgcolor="skyblue">
-		<tr align="center">
-			<td>星期一</td>
+		<tr align="center" valign="top" bgcolor="red">
+			<!-- <td ><font color="Azure"><strong>星期一</strong></font></td> -->
+			<td bgcolor="yellow">星期一</td>
 			<td>星期二</td>
 			<td>星期三</td>
 			<td>星期四</td>
 			<td>星期五</td>
 		</tr>
 		<tr align="center">
-			<td>html</td>
+			<!-- <td>html</td> -->
+			<td colspan="2">html</td>
 			<td>css</td>
 			<td>js</td>
 			<td>vue</td>
-			<td>react</td>
 		</tr>	
 		<tr align="center">
 			<td>python</td>
 			<td>web</td>
 			<td>django</td>
 			<td>flask</td>
-			<td>数据分析</td>
+			<!-- <td >数据分析</td> -->
+			<td rowspan="2">数据分析</td>
 		</tr>	
 		<tr align="center">
 			<td>ps</td>
 			<td>ai</td>
 			<td>c4d</td>
 			<td>交互</td>
-			<td>h5</td>
 		</tr>		
 	</table>
 </body>
