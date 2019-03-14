@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+/*		一般情况下，我们不应该为父元素提供高度，父元素高度应该由子元素(内容)撑开
+		因为子元素已经漂浮上天，所以父元素不会被子元素撑开，这就是高度塌陷
+		因为我们既要内容在显示，又要父元素由子元素撑开，所以需要清浮动*/
+		.container {
+			width: 400px;
+			border: 10px solid black;
+			/*auto会自动分配左右的外边距，使左外边距=右外边距*/
+			margin: auto auto
+		}
+		.box {
+			width: 200px;
+			background-color: pink;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+			黑哥真帅 <br />
+		</div>
+	</div>
+</body>
+</html>
