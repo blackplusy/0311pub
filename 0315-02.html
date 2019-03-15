@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*position:static;静态，不是定位元素*/
+		/*只需要一个元素是定位元素的话，就会给他4个相应的属性*/
+		/*只需要修改自身，不会影响其他元素*/
+		div {
+			width: 100px;
+			height: 100px;
+		}
+		.div1 {
+			background-color: pink;
+		}
+		.div2 {
+			background-color: blue;
+			position: relative;
+			left:100px;
+			top:100px;
+		}
+		.div3 {
+			background-color: green;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+</body>
+</html>
