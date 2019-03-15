@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			padding:0px;
+			margin: 0px;
+		}
+		.mask {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.4);
+			/*rgba RGBA 是代表Red（红色） Green（绿色） Blue（蓝色）和 Alpha（不透明度）三个单词的缩写。*/
+			/*脱离文档流，让mask脱离body控制，因为body的高度只有0*/
+			position: fixed;
+			/*讲遮罩左上角固定页面左上方，这样您就可以覆盖整个页面*/
+			top:0px;
+			left:0px;
+		}
+		.popup {
+			width: 400px;
+			height: 200px;
+			border: 2px solid yellow;
+			/*遮罩已经浮上天，所以对应弹框也应该是绝对定位元素*/
+			position:fixed;
+			z-index: 10;
+			left:50%;
+			top:50%;
+			margin-left: -202px;
+			margin-top: -102px;
+		}
+	</style>
+</head>
+<body style="height: 2000px;">
+	im a chinese
+	from china
+	<div class="popup"></div>
+	<div class="mask"></div>
+</body>
+</html>
