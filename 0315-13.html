@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.left,.right {
+			width: 200px;
+			height: 1000px;
+			position: absolute;
+		}
+		.center {
+			height: 1000px;
+			margin-left: 200px;
+			background-color:skyblue; 
+		}
+		.left {
+			background-color: pink;
+			left:0;
+			top:0;
+		}
+		.right {
+			background-color: yellow;
+			right: 0;
+			top:0;
+		}
+	</style>
+</head>
+<body>
+<!-- 	中间先加载
+	两边宽度固定
+	中间的内容区域能自适应伸缩，所以不能给宽度 -->
+	<div class="center">中间</div>
+	<div class="left">左边</div>
+	<div class="right">右边</div>
+</body>
+</html>

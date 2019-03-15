@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*css hack 通过对不同浏览器的识别方式做处理*/
+		div {
+			width: 100px;
+			height: 100px;
+			background: pink;
+			/*下面代码 标准浏览器 google，IE9以上*/
+			background: blue\9;
+			/*IE7下面看的*/
+			+margin-top: -3px;
+			+background: yellow;
+			/*IE6下看的 */
+			_background:green;
+		}
+	</style>
+</head>
+<body>	
+	<div></div>
+</body>
+</html>
